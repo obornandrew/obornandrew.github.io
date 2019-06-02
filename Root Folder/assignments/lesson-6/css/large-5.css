@@ -1,0 +1,25 @@
+* { margin: 0; padding: 0;}
+body { background-color: #ddd; }
+header { background-color: #bbb; text-align: center;}
+h1 { padding: .5rem; }
+
+nav {	margin: 0 auto;	max-width: 760px; background-color: #000;	}
+.navigation { list-style: none; text-align: center; }
+  .navigation li:first-child { display: block;}
+  .navigation li { display: none;}
+  .navigation a {	display: block;	color: #fff; padding: .75rem;	text-align: center;	text-decoration: none;}
+  .navigation a:hover {	color: #000; background-color: #fff; font-weight: 700;	}
+
+	.responsive li { display: block; }
+
+@media only screen and (min-width: 32.5em) {
+  .navigation li:first-child { display: none;	}
+	.navigation li { display: inline-block; margin-right: 1rem;}	
+	.navigation li a { color: yellow;}
+}
+<ul>
+  <li><a href="default.asp">Home</a></li>
+  <li><a href="news.asp">News</a></li>
+  <li><a href="contact.asp">Contact</a></li>
+  <li><a href="about.asp">About</a></li>
+</ul>
