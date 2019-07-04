@@ -35,11 +35,6 @@ header, footer, footer a {
     color: brown;
 }
 
-header img {
-    width: 200px;
-    height: auto;
-    float: right;
-}
 
 footer {
     font-size: 12px;
