@@ -1,0 +1,16 @@
+@media only screen and (min-width: 600px) {
+  .menu li:first-child {
+    display:none;
+  }
+  .menu li {
+    display: inline-block;
+  }
+  .menu a {
+    border-radius: 0 0 0 0;
+    border: none;
+    padding: .8rem;
+    font-size: 100%;
+  }
+  .container-section {
+    display: block;
+  }
