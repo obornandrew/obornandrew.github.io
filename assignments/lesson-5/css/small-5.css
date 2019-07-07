@@ -1,45 +1,92 @@
-/* CIT 230 - Assignment Portal CSS Template */
-/* You may use #HEX or color names */
-
-/* * is a wildcard referring to all elements. */
-* { margin: 0; box-sizing: border-box; } 
-
-body { 
-    font-size: 16px; 
-    line-height: 32px;
-    font-family: /* Ubuntu, sans-serif */;
-    color: /* f23101 */;
+* body, header, main, h1, h2 {
+margin: 0 auto;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Permanent Marker', cursive;
 }
 
-h1 {
-    font-size: /* x.xrem  (rem is a unit of measure) */;
-    color: /* 0d0301 */;
+body {
+max-width: 960px;
 }
 
-h2 {
-    font-size: /* x.xrem */;
-    text-align: center;
-    border-bottom: 1px solid #bbb;
+header footer {
+text-align: center;
+background-color: darkolivegreen;
 }
 
-header, main, footer {
-    margin: 1.25rem auto;
-    padding: .5rem;
-    max-width: /* xxxpx (px = pixel is a unit of measure)  */;
+.logo, .header-title-text {
+display: inline-block;
+vertical-align: middle;
 }
 
-header, footer, footer a {
-    text-align: center;
-    background-color: /* whitesmoke */;
-    color: black;
+.logo {
+width: 15%;
 }
 
-header img {
-    width: /*  */;
-    height: auto;
-    float: right;
+
+.header-title-text {
+margin-left: 20px;
+font-size: .9rem;
+
+}
+
+.title-header {
+color:  lightsalmon;
+text-shadow: 5px .5px rgb(148, 180, 240);
+}
+
+.motto {
+font-style: oblique;
+font-weight: 700;
+color:  darkgreen;
+}
+
+nav.menu {
+margin: 0 auto;
+}
+
+.menu ul, li {
+padding: 0;
+box-shadow: 5px 10px 18px burlywood;
+list-style-type: none;
+}
+
+.menu a {
+display: inline-block;
+height: 100%;
+width: 100%;
+color: white;
+text-align: center;
+font-size: 1em;
+padding: .5em 0;
+border: 1px solid black;
+background: lightsalmon;
+border-radius: 5px 5px 5px 5px;
+text-decoration: none;
+}
+
+.menu a:hover {
+background: lightseagreen;
+}
+
+.menu .active {
+background: darkcyan;
+}
+
+h1.title-section {
+margin: 1em auto .2em;
+text-shadow: 2px .5px darkblue;
+
+}
+
+.hero-banner img {
+width: 100%;
+height: auto;
+box-shadow: 5px 10px 18px burlywood;
+margin-top: 10px;
+border-radius: 5px 5px 5px 5px;
 }
 
 footer {
-    font-size: /* smaller */;
+background-color:burlywood
 }
