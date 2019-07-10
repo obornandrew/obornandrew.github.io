@@ -1,128 +1,70 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="description" content="The Weather Site">
-  <title>Preston Weather | Andrew Oborn | BYU-Idaho</title>
-  <link rel="icon" href="images/gorilla.jpg" type="image/x-icon" />
-  <meta name="Weather and Community Resource Information for Southeastern, Idaho" content="Preston Idaho and surrounding communities of Soda Springs, Fish Haven, weather resources and Information, forecast, community events, photo gallery, storm center, calendar, emergency preparedness, articles, location.">
-  <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86">
-  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/small-6.css" />
-  <link rel="stylesheet" href="css/large-6.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small-6.css">
+    <link rel="stylesheet" href="css/large-6.css">
+    <title>The Weather Site</title>
 </head>
 <body>
-  <header>
-    <img src="images/sunrise.png" alt="logo" class="logo">
-    <div class="header-title-text">
-      <h1 class="title-header">My Wether</h1>
-      <div class="motto">&#x22;Because weather happens...&#x22;
-      </div>
+    <header>
+        <div class="header">
+            <img id="logo" src="images/logo.jpeg" alt="logo">
+            <h1 id="siteName">The Weather Site</h1>
+            <div class="motto">
+                <h4>We've got the best Weather!</h4>
+            </div>
+        </div>
+        <nav>
+            <button onclick="toggleMenu()" class="menu">&equiv;</button>
+            <ul id="menu" class="hide">
+                <li><a href="#">Home</a></li>
+                <li class="active"><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <div>
+                <figure>
+                <img class="forecast-pic" src="images/cit230_image_franklin_400.jpg" alt="preston" srcset="
+                images/cit230_image_franklin_400.jpg 400w,
+                images/cit230_image_franklin_1200.jpg 1200w">
+                <figcaption>Preston</figcaption>      
+                </figure>
+                <div>
+                    <div class="weather-summary">
+                        <h1>Preston</h1>
+                        <h3>Weather Summary</h3>
+                        <p>Raining: 75&#8457</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <article class="section4">
+            <h1>Rain in Preston?</h1>
+            <p>Here's the article</p>
+            <a href="#"><img src="images/rain.jpg" alt="rain"></a>
+        </article>
+    </main>
+    <div class="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5921.632236546358!2d-111.87810464140688!3d42.08998917900155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f7c244bc9bcf%3A0x5dc50d84ca1e21ea!2sPreston+High+School!5e0!3m2!1sen!2sus!4v1549704629335"
+            width="300" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
-    <div class="header-object"></div>
-    <nav>
-      <ul class="menu">
-        <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776;&nbsp;Menu</a></li>
-        <li><a href="#" title="Home">Home</a></li>
-        <li><a href="#" title="Preston" class="active">Preston</a></li>
-        <li><a href="#" title="Soda Springs">Soda Springs</a></li>
-        <li><a href="#" title="Fish Haven">Fish Haven</a></li>
-        <li><a href="#" title="Storm Center">Storm Center</a></li>
-        <li><a href="#" title="Gallery">Gallery</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="container-hero">
-      <h1 id="title-town">Preston, ID</h1>
-      <div class="hero-banner">
-        <img src="images/hellothere.jpg" srcset="images/cit230_image_franklin400x194sm.jpg 400w,
-                     images/cit230_image_franklin800x388.jpeg 800w,
-                     images/cit230_image_franklin1200x582lg.jpg 1200w"
-          sizes="85vw" alt="fluffly white clouds and blue skies">
-      </div>
-      <div class="img-overlay">
-        <form action="#">
-          <h3>Weather Summary</h3>
-          <label for="current-conditions">Currently:</label>
-          <input type="text" id="current-conditions" name="current-conditions" value="Sunny"><br>
-          <label for="current-temp">Temperature:</label>
-          <input type="text" id="temp" name="current-temp" value="70&#8457;"><br>
-          <label for="humidity">Humidity:</label>
-          <input type="text" id="humidity" name="humidity" value="12&#37;"><br>
-
-          <label for="precipitation">Precipitation:</label>
-          <input type="text" id="precipitation" name="precipitation" value="0 inches"><br>
-
-          <label for="wind-speed">Wind Speed:</label>
-          <input type="text" id="wind-speed" name="wind-speed" value="105 mph"><br>
-        </form>
-      </div>
-    </section>
-    <section class="container-section">
-      <h2>5-Day Forecast</h2>
-      <div class="forecast">
-        <table>
-          <tr>
-            <th>Tue</th>
-            <th>Wed</th>
-            <th>Thu</th>
-            <th>Fri</th>
-            <th>Sat</th>
-          </tr>
-          <tr>
-            <td>70&#8457;</td>
-            <td>70&#8457;</td>
-            <td>70&#8457;</td>
-            <td>70&#8457;</td>
-            <td>70&#8457;</td>
-          </tr>
-        </table>
-      </div>
-    </section>
-    <article class="clearfix">
-      <h2 class="article-title">Classes Canceled Due to Weather</h2>
-      <h3 class="article-subtitle">By NECIA P. SEAMONS Citizen editor </h3>
-      <p class="article-body">Both the Preston School District and West Side School District will be closed tomorrow,
-        Feb. 14, due to the weather and the amount of snow that has fallen today. At least eight inches of heavy wet
-        snow has fallen on the valley floor. Much more has fallen in the higher elevations. Find the rest of the story
-        <a href="https://www.hjnews.com/preston/news/both-school-districts-cancel-classes-tomorrow-due-to-the-weather/article_b81f75aa-3006-11e9-b52c-3b0573f53fa6.html"
-          target="_blank" rel="external site for The Preston Citizen newspaper">here</a>.
-      </p>
-      <img src="images/prestonschoolsclosedweather.imagesm.jpg" srcset="images/prestonschoolsclosedweather.imagesm.jpg 400w,
-                   images/prestonschoolsclosedweather.image.jpg 800w"
-        sizes="85vw" alt="snow plow working to clear Preston's roads">
-    </article>
-  </main>
-  <footer>
-    <div class="container-contact clearfix">
-      <div class="contact">
-        <address>
-          <pre>
-            name of company
-            address of company
-            city, state, zip
-            phone
-            fax number
-            website
-            email informato
-          </pre>
-        </address>
-      </div>
-      <!-- <div class="resp-container-iframe"> -->
-      <img id="map" src="images/map-preston400x234.PNG" alt="map of Preston, Idaho">
-      <!--         <iframe class="resp-iframe" id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d189463.07935818416!2d-111.880325!3d42.099747!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C+ID+83263!5e0!3m2!1sen!2sus!4v1550281773667"
-          frameborder="0" allowfullscreen> the map was a data hog, I have an api key, but I could not get that to work either
-        </iframe>
-      </div>-->
-    </div>
-    <p id="footend-copy">&copy; 2019 | Michelle J. Markham | <a href="https://www.byui.edu" title="opens BYU Website in new tab"
-        target="_blank" rel="help">BYU-Idaho</a> | <a href="/images/attribution.txt" title="opens text document with attribution information in new tab"
-        target="_blank" rel="help">Attributions</a><br><span id="currentdate"></span></p>
-  </footer>
-  <script src="js/currentdate.js"></script>
-  <script src="js/hamburger.js"></script>
+    <footer>
+        <h5>&#169;<span id="theCopyright-year"></span> | <a href="index.html">Andrew Oborn</a>
+            <p class="footer-date">Current Date: <span id="displayCurrentDate"></span></p></h5>
+    </footer>
+    <!-- <script src="scripts/copyright-year.js"></scripts> -->
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js" ></script>
 </body>
-
 </html>

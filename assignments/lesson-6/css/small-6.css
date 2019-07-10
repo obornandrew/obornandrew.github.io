@@ -1,228 +1,140 @@
-* body, header, footer, main, h1, h2, nav {
-    margin: 0 auto;
-    padding: 0;
-    max-width: 100%;
-    box-sizing: border-box;
-    font-family: 'Permanent Marker', cursive;
-     text-align: center;
-     font-size: 2vw;
-  }
-  body {
-    max-width: 960px;
-    }
-  main {
-    max-width: 85%;
-  }
-  header footer{
-    text-align: center;
-    background-color: darkolivegreen;
-  }
-  footer {
-    box-shadow: -13px 4px 24px 7px black;
-  }  
-  .logo, .header-title-text {
-    display: inline-block;
-    vertical-align: middle;
-  }
-  .logo {
-    width: 14%;
-  }
-  .header-title-text {
-    margin-left: 20px;
-  }
-  nav, .menu {
-    background: lightcoral;
-    list-style: none;
-    text-align: center;
-    box-shadow: 5px 10px 18px burlywood;
-    padding: 0;
-  }
-  .menu a, #footend-copy {
-    display: block;
-    color: white;
-    border: 1px solid black;
-    background: lightcoral;
-    border-radius: 5px 5px 5px 5px;
-    text-decoration: none;
-    line-height: 2em;
-    padding: .5rem;
-  }
-  .menu li:first-child {
-    display: block;
-  }
-  .menu li {
+/*******************************************
+FONTS:
+    font-family: 'VT323', monospace;       footer
+    font-family: 'B612 Mono', monospace;   regular text
+    font-family: 'Bungee', cursive;        header
+    font-family: 'Alfa Slab One', cursive; h tags
+*******************************************/
+
+/******************************************
+COLOR SCHEME:
+    #1C705E
+    #B88A29  -- background
+    #360000
+    #421B45
+    #CE7A5B
+******************************************/
+* {
+  max-width: 960px;
+  margin: 0px auto;
+}
+
+body {
+  background-color: #b88a29;
+  /* min-height: 90%; */
+  text-align: center;
+  display: inline;
+}
+/* 
+header {
+  font-family: "B612 Mono", monospace;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "B612 Mono", monospace;
+}
+ */
+
+#logo {
+  width: 125px;
+  height: 125px;
+  float: center; /*    display: inline; */
+}
+
+h1#siteName {
+  float: none;
+  position: relative;
+  display: inline;
+  text-align: right;
+  /* padding-top: 10px; */
+  /* border-style: double; */
+  /* font-size: .75em; */
+}
+
+/* .motto {
+  display: inline;
+} */
+
+.header {
+  background-color: chocolate;
+  /* height: 100%; */
+  /* padding-top: 10px;
+    padding-bottom: 10px; */
+  /* margin: none; 10px; */
+  /* border-style: double; */
+}
+img {
+  height: 175px;
+  width: auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+  font-family: "B612 Mono", monospace;
+}
+
+p {
+  font-family: "B612 Mono", monospace;
+}
+
+footer {
+  font-size: 2rem;
+  font-family: "VT323", monospace;
+  background-color: chocolate;
+}
+
+nav {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  /* border-style: double; */
+}
+
+.menu,
+/* .section3, */
+.section4,
+.section5,
+.section6 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin: 10px;
+  /* border-style: double; */
+}
+
+.forecast-pic {
+  width: 75%;
+  height: auto;
+  margin-top: 10px;
+  position: static;
+}
+
+.weather-summary {
+  padding-bottom: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color:  rgba(184, 138, 41, 0.3);
+  position: absolute;
+  left: 30%;
+  top: 19%;
+  z-index: 1;
+  /* max-width: 900px; */
+}
+
+.footer-date{
+  font-size: .8rem;
+}
+
+/************************************* Media Quarry *************************************/
+@media screen and (max-width: 500px) {
+  /* .forecast-pic {
+    display: none;
+  } */
+
+  .weather-summary{
     display: none;
   }
-  .responsive li {
-    display: block;
-  }
-  .menu a.active {
-    background-color: darkcyan;
-  }
-  .menu a:hover {
-    background: lightseagreen;
-  }
-  #footend-copy a:link, #footend-copy a:visited {
-    color: white;
-  }
-  .title-header {
-    color:  darkseagreen;
-    font-size: 200%;
-    text-shadow: 2px 8px 6px black, 0px -5px 35px grey;
-  }
-  .motto {
-    font-style: oblique;
-    font-weight: 700;
-    color:  slateblue;
-    font-size: 140%;
-    text-shadow: 2px 8px 6px black, 0px -5px 35px burlywood;
-  }
-  .menu a {
-    font-size: 130%;
-    text-shadow: 2px 8px 6px black, 0px -5px 35px burlywood;
-  }
-  #title-town, .article-title {
-    font-size: 175%;
-    margin: 1.2em 0 .7em 0;
-    font-weight: bold;
-    text-shadow: 2px 8px 6px black, 0px -5px 35px burlywood;
-  }
-  .img-overlay {
-    color: burlywood;
-    font-size: 115%;
-  }
-   .container-section h2 {
-    font-size: 150%;
-    text-align: center;
-    text-shadow: 3px 3px 2px black;
-  }
-   h3 {
-    font-size: 115%;
-    text-align: left;
-  }
-  .contact address pre {
-    font-size: 130%;
-    text-align: left;
-  }
-  #footend-copy {
-    font-size: 80%;
-  }
-  .hero-banner img {
-    width: 100%;
-    height: auto;
-    box-shadow: 5px 10px 18px burlywood;
-    border-radius: 5px 5px 5px 5px;
-  }
-  .container-hero {
-    position: relative;
-   }
-  .img-overlay form {
-    position: absolute;
-    top: 8vw;
-    left: 1.5vw;
-    margin: 0 auto;
-    padding: .75em;
-    background-color: darkolivegreen;
-  }
-  .img-overlay h3 {
-    margin: 0 0 .8em auto;
-    border-bottom: 1px solid burlywood;
-  }
-  .img-overlay form label {
-    float: left;
-    width: 8em;
-    margin-right: .8em;
-    padding-bottom: .5em;
-    text-align: right;
-  }
-  .img-overlay form input {
-    width: 4.5em;
-    background-color: transparent;
-    padding-bottom: .5em;
-    padding-right: .25em;
-    border: none;
-    color: inherit;
-  }
-  .container-section {
+
+  .hide{
     display: none;
-    background-color: lightcoral;
-    margin: 2em 0 .7em 0;
-    padding: .6em;
-    box-shadow: 5px 10px 18px black;
-    border-radius: 5px 5px 5px 5px;
-    color: burlywood;
-    align-content: center;
   }
-  .forecast table {
-    margin: .5em auto;
-    padding-top: .5em;
-    background-color: burlywood;
-    box-shadow: 5px 10px 18px black;
-    border-radius: 5px 5px 5px 5px;
-  }
-  .forecast table th {
-    font-size: 115%;
-    color: lightcoral;
-  }
-  .forecast table td {
-    padding: .5em;
-    font-size: 115%;
-    background-color: lightseagreen;
-    border: 2px solid black;
-  }
-  article {
-    position: relative;
-    background-color: lightgoldenrodyellow;
-    margin: 2em 0 8vw 0;
-    padding: .6em;
-    box-shadow: 5px 10px 18px black;
-    border-radius: 5px 5px 5px 5px;
-  }
-  .article-title {
-    text-align: left;
-    margin: 0;
-  }
-  .article-subtitle {
-    text-align: left;
-    margin-left: .8em;
-    margin-top: .25em;
-  }
-  article p.article-body {
-    float: left;
-    text-align: left;
-    margin: 0 auto;
-    padding-left: 1vw;
-    width: 45%;
-    height: 100%;
-  }
-  article .article-image {
-    float: right;
-    position: absolute;
-    margin: 0 auto;
-    max-width: 50%;
-    min-width: 30%;
-    max-height: 100%;
-    top: 5vw;
-    right: 1vw;
-    box-shadow: 5px 10px 18px black;
-    border-radius: 5px 5px 5px 5px;
-  }
-  .container-contact {
-    margin: 5em 0 1.7em 0;
-    padding: 1em;
-  }
-  .contact address pre {
-    width: 42.5vw;
-    float: left;
-  }
-  #map {
-    width: 42.5%;
-    height: auto;
-    border-radius: 15px 15px 15px 15px;
-    box-shadow: 0px 10px 18px 5px black;
-  }
-  .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+}
