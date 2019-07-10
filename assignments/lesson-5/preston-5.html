@@ -1,45 +1,61 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-      <title>Preston Weather | Andrew Oborn | BYU-Idaho</title>
-      <meta name="description" content="The Weather Site">
-      <style>
-          .style1 {margin: 0 auto; border: 1px solid #bbb; padding: 5px; background-color: #eee; line-height: 1.5em;}
-      </style>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="css/normalize.css">
-      <link rel="stylesheet" href="css/small-4.css">
-      <link rel="stylesheet" href="css/large-4.css">
-  </head>
-  <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small-5.css">
+    <link rel="stylesheet" href="css/large-5.css">
+    <title>The Weather Site</title>
+</head>
+<body>
     <header>
-        <div id="siteTitle">The Weather Site</div>
-        <div class="motto">"We've got the best weather!"</div>
+        <div class="header">
+            <img id="logo" src="images/logo.jpeg" alt="logo">
+            <h1 id="siteName">The Weather Site</h1>
+            <div class="motto">
+                <h4>We've got the best Weather</h4>
+            </div>
         </div>
-        <nav class="menu">
+        <nav>
+            <span class="menu">&equiv; Menu</span>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="" class="active">Preston</a></li>
-                <li><a href="">Soda Springs</a></li>
-                <li><a href="">Fish Haven</a></li>
-                <li><a href="">Storm Center</a></li>
-                <li><a href="">Gallery</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Preston Idaho</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
             </ul>
         </nav>
     </header>
-  <main>
-    <h2>Preston</h2>
-        <section>
-            <h3>Weather</h3>
-            <h3>Forecast</h3>
-            <img src="images/hellothere.jpg" width="520" height="216">
-        </section>
-  </main>
-        <footer>
-            <p>Copyright -C- 2019 |  The Weather Site   | Preston ID </p class="smaller">
-            </p>
-        </footer>
-    </body>
+    <main>
+        <div>
+            <div>
+                <img class="forecastpic" src="images/preston.jpg" alt="preston">            
+                <div>
+                    <div class="weathersummary">
+                        <h1>Preston</h1>
+                        <h3>Weather Summary</h3>
+                        <p>Raining: 75&#8457</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <article class="section4">
+            <h1>Headline - Rain in Preston</h1>
+            <p>Article goes here!</p>
+            <a href="#"><img src="images/rain.png" alt="rain"></a>
+        </article>
+    </main>
+    <div class="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5921.632236546358!2d-111.87810464140688!3d42.08998917900155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f7c244bc9bcf%3A0x5dc50d84ca1e21ea!2sPreston+High+School!5e0!3m2!1sen!2sus!4v1549704629335"
+            width="300" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <footer>
+        <h5>&#169;<a href="../../../index.html">Andrew Oborn</a> | Current Date: June 20, 2019</h5>
+    </footer>
+</body>
 </html>
