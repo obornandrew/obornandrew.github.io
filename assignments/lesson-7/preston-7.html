@@ -4,19 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/small-6.css">
-    <link rel="stylesheet" href="css/large-6.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small-7.css">
+    <link rel="stylesheet" href="styles/medium-7.css">
+    <link rel="stylesheet" href="styles/large-7.css">
     <title>The Weather Site</title>
 </head>
 <body>
     <header>
-        <div class="header">
-            <img id="logo" src="images/logo.jpeg" alt="logo">
-            <h1 id="siteName">The Weather Site</h1>
-            <div class="motto">
-                <h4>We've got the best Weather!</h4>
-            </div>
+        <div class="motto">
+            <img src="images\logo.jpeg" alt="logo">
+            <h1>The Weather Site</h1><br>
+            <h3>We've got the best Weather!</h3>
         </div>
         <nav>
             <button onclick="toggleMenu()" class="menu">&equiv;</button>
@@ -26,22 +25,33 @@
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
                 <li><a href="#">Storm Center</a></li>
-                <li><a href="#">Gallery</a></li>
+                <li><a href="lesson-7/gallery-7.html">Gallery</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <div id="currentTemp">
+            <div>Temperature: 
+                <span id="getTemp"></span>&deg;
+            </div>
+            <div>Wind Speed: 
+                <span id="currentWindSpeed"></span>mph
+            </div>
+            <div>Wind Chill is:
+                <span id="windChill"></span>&deg;
+            </div>
+        </div>
         <div>
             <div>
                 <figure>
-                    <img class="forecast-pic" src="images/cit230_image_franklin_small.jpg" alt="preston" srcset="
-                    images/cit230_image_franklin_small.jpg 400W,
-                    images/cit230_image_franklin_large.jpg 1200W
-                    ">
+                <img class="forecast-pic" src="lesson-6/images/cit230_image_franklin_400.jpg" alt="preston" srcset="
+                lesson-6/images/cit230_image_franklin_400.jpg 400w,
+                lesson-6/images/cit230_image_franklin_1200.jpg 1200w
+                ">
                 <figcaption>Preston</figcaption>      
                 </figure>
                 <div>
-                    <div class="weathersummary">
+                    <div class="weather-summary">
                         <h1>Preston</h1>
                         <h3>Weather Summary</h3>
                         <p>Raining: 75&#8457</p>
@@ -61,11 +71,12 @@
             width="300" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
     <footer>
-        <h5>&#169;<span id="theCopyrightyear"></span> | <a href="index.html">Andrew Oborn</a>
-            <p class="footerdate">Current Date: <span id="displayCurrentDate"></span></p></h5>
+        <h5>&#169;<span id="theCopyright-year"></span> | <a href="index.html">Andrew Oborn</a>
+            <p class="footer-date">Current Date: <span id="displayCurrentDate"></span></p></h5>
     </footer>
-    <!-- <script src="scripts/copyrightyear.js"></scripts> -->
+    <!-- <script src="scripts/copyright-year.js"></script> -->
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/hamburger.js" ></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>

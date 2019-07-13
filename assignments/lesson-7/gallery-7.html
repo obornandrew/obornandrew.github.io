@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="styles/normalize.css" />
+     <link rel="stylesheet" href="styles/small-7.css" />
+     <link rel="stylesheet" href="styles/medium-7.css">
+     <link rel="stylesheet" href="styles/large-7.css" />
+     <title>The Weather Site Gallery</title>
+</head>
+<body>
+     <header>
+          <div class="header">
+               <img id="logo" src="images\logo.jpeg" alt="logo" />
+               <h1 id="siteName">The Weather Site</h1>
+               <div class="motto">
+                    <h4>We've got the best Weather!</h4>
+               </div>
+          </div>
+          <nav>
+               <button onclick="toggleMenu()" class="menu">&equiv;</button>
+               <ul id="menu" class="hide">
+                    <li><a href="preston-7.html">Home</a></li>
+                    <li><a href="#">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="#">Storm Center</a></li>
+                    <li class="active">
+                         <a href="gallery-7.html">Gallery</a>
+                    </li>
+               </ul>
+          </nav>
+     </header>
+     <main>
+          <div>
+               <h1>The Weather Site Gallery</h1>
+          </div>
+          <div id="gallery-images">
+               <figure class="gallery-pictures">
+                    <img src="images/gallery-photos/weather-1.jpg" alt="">
+                    <figcaption>Lorem ipsum dolor sit</figcaption>
+               </figure>
+               <figure class="gallery-pictures">
+                    <img src="images/gallery-photos/weather-2.jpg" alt="">
+                    <figcaption>Lorem ipsum dolor sit</figcaption>
+               </figure>
+               <figure class="gallery-pictures">
+                    <img src="images/gallery-photos/weather-3.jpg" alt="">
+                    <figcaption>Lorem ipsum dolor sit</figcaption>
+               </figure>
+               <figure class="gallery-pictures">
+                    <img src="images/gallery-photos/weather-4.jpg" alt="">
+                    <figcaption>Lorem ipsum dolor sit</figcaption>
+               </figure>
+               <figure class="gallery-pictures">
+                    <img src="images/gallery-photos/weather-5.jpg" alt="">
+                    <figcaption>Lorem ipsum dolor sit</figcaption>
+               </figure>
+               <figure class="gallery-pictures">
+                    <img src="images/gallery-photos/weather-6.jpg" alt="">
+                    <figcaption>Lorem ipsum dolor sit</figcaption>
+               </figure>
+          </div>
+     </main>
+     <footer>
+          <h5>&#169;<span id="theCopyright-year"></span> | <a href="index.html">Andrew Oborn</a> 
+               <p class="footer-date">Current Date: <span id="displayCurrentDate"></span></p>
+          </h5>
+     </footer>
+     <script src="scripts/currentdate.js"></script>
+     <script src="scripts/hamburger.js"></script>
+</body>
+</html>
