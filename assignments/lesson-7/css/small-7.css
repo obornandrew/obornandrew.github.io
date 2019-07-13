@@ -97,7 +97,7 @@ nav {
   color: blue;
 }
 
-/****************** Media Quarry ******************/
+/****************** Media Query ******************/
 
 @media screen and (max-width: 560px) {
 

@@ -181,7 +181,7 @@ form fieldset{
   border: 2px solid orange;
 } */
 
-/****************** Media Quarry ******************/
+/****************** Media Query ******************/
 
 @media screen and (max-width: 560px) {
 

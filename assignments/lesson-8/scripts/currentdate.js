@@ -24,7 +24,6 @@ var month = monthNames[today.getMonth()];
 // console.log(monthNames);
 // console.log(month);
 
-/* JOKE AT 46-MINUTES ON OFFICE HOUR */
 
 // Get Weekday
 var dayNames = new Array(7);
