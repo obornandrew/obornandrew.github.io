@@ -1,0 +1,215 @@
+/*******************************************
+FONTS:
+    font-family: 'VT323', monospace;       footer
+    font-family: 'B612 Mono', monospace;   regular text
+    font-family: 'Bungee', cursive;        header
+    font-family: 'Alfa Slab One', cursive; h tags
+*******************************************/
+
+/******************************************
+COLOR SCHEME:
+    #1C705E
+    #B88A29  -- background
+    #360000
+    #421B45
+    #CE7A5B
+******************************************/
+
+* {
+  max-width: auto;
+}
+
+body {
+  background-color: #b88a29;
+  text-align: center;
+}
+
+.motto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: chocolate;
+}
+
+img {
+  height: 175px;
+  width: auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+  font-family: "B612 Mono", monospace;
+  display: flex;
+}
+
+p {
+  font-family: "B612 Mono", monospace;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 2rem;
+  font-family: "VT323", monospace;
+  background-color: chocolate;
+  display: flex;
+}
+
+nav {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  /* border-style: double; */
+}
+
+.forecast-pic {
+  width: 75%;
+  height: auto;
+  margin-top: 10px;
+  position: static;
+}
+
+.weather-summary {
+  padding-bottom: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: rgba(184, 138, 41, 0.3);
+  position: absolute;
+  left: 30%;
+  top: 19%;
+  z-index: 1;
+}
+
+.footer-date {
+  font-size: .8rem;
+}
+
+/* 
+#gallery-images {
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: repeat(3, 1fr);
+} */
+
+nav li.active {
+  background-color:  #d44a16;
+}
+
+/*  ********  ******** FORM ********  ********  */
+main div h1, fieldset legend{
+  font-family: 'Alfa Slab One', cursive;
+}
+
+.formDiv{
+  text-align: left;
+  margin: 15px;
+}
+
+.formDiv input, .formDiv select, .formDiv output, .formDiv textarea, input datalist, #formRadioY, #formRadioM, #formRadioN, #rating{
+  margin-left: 17em;
+}
+
+.formDiv label{
+  position: absolute;
+  font-weight: bold;
+  width: 250px;
+  text-align: right;
+}
+
+#formSubmit{
+  margin: 5px;
+  transform: scale(1.5);
+}
+
+.form{
+  clear: both;
+  max-width: 40%;
+  margin: auto;
+  padding: 6px;
+  background-color: #1C705E;
+}
+
+form fieldset{
+  margin: width 40%;
+  margin: 15px;
+  border: 1.5px solid #b88a29;
+}
+
+#sliderVal{
+  /* display: inline-block; */
+  font-weight: bold;
+}
+
+#formRadioY, #formRadioM, #formRadioN{
+  padding: 20px;
+  width: auto;  
+  height: auto;
+  display: inline-block;
+}
+
+
+/*
+.formDiv label{
+  display: inline-block;
+  margin-top: 12px;
+  font-weight: bold;
+  width: 200px;
+  text-align: left;
+  border: 3px solid chartreuse;
+}
+.formDiv input, .formDiv select, .formDiv output, .formDiv textarea, input datalist, #formRadioY, #formRadioM, #formRadioN, #rating{
+  border: 3px solid magenta;
+  padding: 2px; 
+  text-align: right;
+}
+#formRadioY, #formRadioM, #formRadioN{
+  width: auto;
+  margin: 0px;
+  display: inline-block;
+}
+#addRadioPadding{
+  margin-bottom: 12px;
+}
+#sliderVal{
+  font-weight: bold;
+}
+#formSubmit{
+  margin: 5px;
+  transform: scale(1.5);
+  border: 2px solid orange;
+} */
+
+/****************** Media Quarry ******************/
+
+@media screen and (max-width: 560px) {
+
+  /* .forecast-pic {
+    display: none;
+  } */
+  .weather-summary {
+    display: none;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  nav>button>ul>li {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #gallery-images {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    align-content: center;
+  }
+
+  .gallery-pictures>img {
+    width: 300px;
+    height: auto;
+  }
+}

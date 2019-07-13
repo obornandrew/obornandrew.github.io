@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="styles/normalize.css">
+     <link rel="stylesheet" href="styles/small-8.css">
+     <link rel="stylesheet" href="styles/medium-8.css">
+     <link rel="stylesheet" href="styles/large-8.css">
+     <title>The Weather Site</title>
+</head>
+<body>
+     <header>
+          <div class="motto">
+               <img src="images\logo.jpeg" alt="logo">
+               <h1>The Weather Site</h1><br>
+               <h3>We've got the best Weather!</h3>
+          </div>
+          <nav>
+               <button onclick="toggleMenu()" class="menu">&equiv;</button>
+               <ul id="menu" class="hide">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="preston-8.html">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery-8.html">Gallery</a></li>
+               </ul>
+          </nav>
+     </header>
+     <main>
+          <h1>Thanks for your submission! Stay Safe!</h1>
+     </main>
+     <footer>
+          <h5>&#169;<span id="theCopyright-year"></span> | <a href="index.html">Andrew Oborn</a> 
+               <p class="footer-date">Current Date: <span id="displayCurrentDate"></span></p>
+          </h5>
+     </footer>
+     <!-- <script src="scripts/copyright-year.js"></script> -->
+     <script src="scripts/currentdate.js"></script>
+     <script src="scripts/hamburger.js"></script>
+     <script src="scripts/windchill.js"></script>
+</body>
+</html>
