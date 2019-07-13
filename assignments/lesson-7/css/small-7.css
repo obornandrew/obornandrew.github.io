@@ -14,54 +14,23 @@ COLOR SCHEME:
     #421B45
     #CE7A5B
 ******************************************/
+
 * {
-  max-width: 960px;
-  margin: 0px auto;
+  max-width: auto;
 }
 
 body {
   background-color: #b88a29;
-  /* min-height: 90%; */
   text-align: center;
-  display: inline;
-}
-/* 
-header {
-  font-family: "B612 Mono", monospace;
-}
-h1, h2, h3, h4, h5, h6 {
-  font-family: "B612 Mono", monospace;
-}
- */
-
-#logo {
-  width: 125px;
-  height: 125px;
-  float: center; /*    display: inline; */
 }
 
-h1#siteName {
-  float: none;
-  position: relative;
-  display: inline;
-  text-align: right;
-  /* padding-top: 10px; */
-  /* border-style: double; */
-  /* font-size: .75em; */
-}
-
-/* .motto {
-  display: inline;
-} */
-
-.header {
+.motto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   background-color: chocolate;
-  /* height: 100%; */
-  /* padding-top: 10px;
-    padding-bottom: 10px; */
-  /* margin: none; 10px; */
-  /* border-style: double; */
 }
+
 img {
   height: 175px;
   width: auto;
@@ -72,6 +41,7 @@ ul {
   margin: 0;
   padding: 5px;
   font-family: "B612 Mono", monospace;
+  display: flex;
 }
 
 p {
@@ -79,25 +49,18 @@ p {
 }
 
 footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   font-size: 2rem;
   font-family: "VT323", monospace;
   background-color: chocolate;
+  display: flex;
 }
 
 nav {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  /* border-style: double; */
-}
-
-.menu,
-/* .section3, */
-.section4,
-.section5,
-.section6 {
-  padding-top: 0px;
-  padding-bottom: 0px;
-  margin: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   /* border-style: double; */
 }
 
@@ -112,29 +75,57 @@ nav {
   padding-bottom: 15px;
   padding-right: 15px;
   padding-left: 15px;
-  background-color:  rgba(184, 138, 41, 0.3);
+  background-color: rgba(184, 138, 41, 0.3);
   position: absolute;
   left: 30%;
   top: 19%;
   z-index: 1;
-  /* max-width: 900px; */
 }
 
-.footer-date{
+.footer-date {
   font-size: .8rem;
 }
 
-/************************************* Media Quarry *************************************/
-@media screen and (max-width: 500px) {
+/* 
+#gallery-images {
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: repeat(3, 1fr);
+} */
+
+.active {
+  color: blue;
+}
+
+/****************** Media Quarry ******************/
+
+@media screen and (max-width: 560px) {
+
   /* .forecast-pic {
     display: none;
   } */
-
-  .weather-summary{
+  .weather-summary {
     display: none;
   }
 
-  .hide{
+  .hide {
     display: none;
+  }
+
+  nav>button>ul>li {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #gallery-images {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    align-content: center;
+  }
+
+  .gallery-pictures>img {
+    width: 300px;
+    height: auto;
   }
 }
