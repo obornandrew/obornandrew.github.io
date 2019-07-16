@@ -1,0 +1,52 @@
+@media screen and (min-width: 1201px) {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(167, 84, 25);
+  }
+  li {
+    display: inline-block;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  li a:hover {
+    transition-delay: 175ms;
+    color: #999;
+    background-color: #360000;
+  }
+  nav {
+    padding: 0;
+    margin: 0;
+  }
+  .menu {
+    display: none;
+  }
+  .hide {
+    display: block;
+  }
+  #gallery-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1.25em;
+    align-content: center;
+    align-items: center;
+  }
+  .gallery-pictures>img {
+    width: 300px;
+    height: auto;
+  }
+  .highlight-this:hover {
+    /* background-color: chartreuse; */
+    transform: scale(.92);
+    transition-delay: 200ms;
+    box-shadow: 0px 0px 25px 10px #360000;
+  }
+}

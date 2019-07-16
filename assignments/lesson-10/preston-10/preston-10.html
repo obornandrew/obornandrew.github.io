@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small-10.css">
+    <link rel="stylesheet" href="css/medium-10.css">
+    <link rel="stylesheet" href="css/large-10.css">
+    <title>The Weather Site</title>
+</head>
+<body>
+    <header>
+        <div class="motto">
+            <img class="site-logo" src="images\logo.jpeg" alt="logo">
+            <div class="some-random-class">
+                <h1 class="site-name">The Weather Site</h1>
+                <h3 class="site-motto">We've got the best Weather!</h3>
+            </div>
+        </div>
+        <nav>
+            <button onclick="toggleMenu()" class="menu">Menu</button>
+            <ul id="menu" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="preston-10.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <div id="weatherdiv">
+            <div id="weather-summary-container">
+                <h2>Preston Weather Summary</h2>
+                <div id="prestonCurrentTemperatureDiv">Temperature: <span id="prestonCurrentTemperature"></span></div>
+                <div id="prestonCurrentHumidityDiv">Humidity: <span id="prestonCurrentHumidity"></span></div>
+                <div id="prestonCurrentWindSpeedDiv">Wind Speed: <span id="prestonCurrentWindSpeed"></span></div>
+                <div id="prestonCurrentWindChillDiv">Wind Chill: <span id="prestonCurrentWindChill"></span></div>
+            </div>
+            <div id="weather-forecast-container">
+                <h2>Preston Weather Forecast</h2>
+                <div class=forecast>
+                    <section id="forecasttable">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Day</th>
+                                    <th id="day0"></th>
+                                    <th id="day1"></th>
+                                    <th id="day2"></th>
+                                    <th id="day3"></th>
+                                    <th id="day4"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr id=high-temps>
+                                    <td>High</td>
+                                    <td id="high0"></td>
+                                    <td id="high1"></td>
+                                    <td id="high2"></td>
+                                    <td id="high3"></td>
+                                    <td id="high4"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <div>data from OpenWeatherMap.org</div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="homePicAndForecast">
+                <figure>
+                    <img class="forecast-pic" src="../preston-10/" alt="preston-idaho" srcset="
+                ../preston-10/images/cit230_image_franklin_small.jpg 400w,
+                ../preston-10/images/cit230_image_franklin_large.jpg 1200w">
+                    <figcaption>Preston</figcaption>
+                </figure>
+            </div>
+        </div>
+        <article class="section4">
+            <h1>Headline - Rain in Preston</h1>
+            <p>The rain in Preston stays mainly on the plane.</p>
+            <a href="#"><img src="images/rain.jpg" alt="rain"></a>
+        </article>
+    </main>
+    <div class="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5921.632236546358!2d-111.87810464140688!3d42.08998917900155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f7c244bc9bcf%3A0x5dc50d84ca1e21ea!2sPreston+High+School!5e0!3m2!1sen!2sus!4v1549704629335"
+            width="300" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <footer>
+        <h5>&#169;<span id="theCopyright-year"></span> | <a href="../../../index.html">Andrew Oborn</a>
+            <p class="footer-date">Current Date: <span id="displayCurrentDate"></span></p>
+        </h5>
+    </footer>
+    <!-- <script src="scripts/copyright-year.js"></script> -->
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <!-- <script src="scripts/windchill.js"></script> -->
+    <script src="scripts/weather.js"></script>
+</body>
+</html>
