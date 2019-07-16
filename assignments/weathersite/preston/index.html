@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="css/normalize.css">
+     <link rel="stylesheet" href="css/small.css">
+     <link rel="stylesheet" href="css/medium.css">
+     <link rel="stylesheet" href="css/large.css">
+     <title>The Weather Site</title>
+</head>
+<body>
+     <header>
+          <div class="motto">
+               <img class="site-logo" src="images/logo.jpeg" alt="logo">
+               <div class="some-random-class">
+                    <h1 class="site-name">The Weather Site</h1>
+                    <h3 class="site-motto">We've got the best Weather!</h3>
+               </div>
+          </div>
+          <nav>
+               <button onclick="toggleMenu()" class="menu">Menu</button>
+               <ul id="menu" class="hide">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="preston.html">Preston</a></li>
+                    <li><a href="soda-springs.html">Soda Springs</a></li>
+                    <li><a href="fish-haven.html">Fish Haven</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+               </ul>
+          </nav>
+     </header>
+     <main class="main">
+          <section class="towns">
+               <!-- ************************************** PRESTON ************************************** -->
+               <section class="firstTown">
+                    <h1 id="town1Name"></h1>
+                    <h2 id="town1Motto"></h2>
+                    <h4 id="town1YearFounded"></h4>
+                    <h4 id="town1Population"></h4>
+                    <h4 id="town1AnnualRainFall"></h4>
+                    <figure class="homePageImages">
+                         <a href="preston.html">
+                              <img id="homeTownPreston" src="images/home/preston.jpg" alt="Preston">
+                              <figcaption>Preston, Idaho</figcaption>
+                         </a>
+                    </figure>
+               </section>
+               <!-- ************************************** SODA SPRINGS ************************************** -->
+               <section class="secondTown">
+                    <h1 id="town2Name"></h1>
+                    <h2 id="town2Motto"></h2>
+                    <h4 id="town2YearFounded"></h4>
+                    <h4 id="town2Population"></h4>
+                    <h4 id="town2AnnualRainFall"></h4>
+                    <figure class="homePageImages">
+                         <a href="soda-springs.html">
+                              <img class="homeTownSodaSprings" src="images/home/soda-springs.jpg" alt="soda-springs">
+                              <figcaption>Soda Springs, Idaho</figcaption>
+                         </a>
+                    </figure>
+               </section>
+               <!-- ************************************** FISH HAVEN ************************************** -->
+               <section class="thirdTown">
+                    <h1 id="town3Name"></h1>
+                    <h2 id="town3Motto"></h2>
+                    <h4 id="town3YearFounded"></h4>
+                    <h4 id="town3Population"></h4>
+                    <h4 id="town3AnnualRainFall"></h4>
+                    <figure class="homePageImages">
+                         <a href="fish-haven.html">
+                              <img class="homeTownFishHaven" src="images/home/fish-haven.jpg" alt="fish-haven">
+                              <figcaption>Fish Haven, Idaho</figcaption>
+                         </a>
+                    </figure>
+               </section>
+          </section>
+     </main>
+     <footer>
+          <h5>&#169;<span id="theCopyright-year"></span> | <a href="../../../index.html">Andrew Oborn</a>
+               <p class="footer-date">Current Date: <span id="displayCurrentDate"></span></p>
+          </h5>
+     </footer>
+     <script src="scripts/currentdate.js"></script>
+     <script src="scripts/hamburger.js"></script>
+     <script src="scripts/index-json.js"></script>
+</body>
+</html>

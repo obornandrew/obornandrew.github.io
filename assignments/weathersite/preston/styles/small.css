@@ -1,0 +1,311 @@
+/*******************************************
+FONTS:
+    font-family: 'VT323', monospace;       footer
+    font-family: 'B612 Mono', monospace;   regular text
+    font-family: 'Bungee', cursive;        header
+    font-family: 'Alfa Slab One', cursive; h tags
+*******************************************/
+
+/*
+New Fonts
+font-family: 'Timmana', sans-serif;
+*/
+
+/******************************************
+COLOR SCHEME:
+    #1C705E
+    #B88A29  -- background
+    #360000
+    #421B45
+    #CE7A5B
+******************************************/
+
+* {
+  max-width: auto;
+}
+
+body {
+  background-color: #b88a29;
+  text-align: center;
+}
+
+.motto {
+  display: flex;
+  justify-content: center;
+  background-color: chocolate;
+}
+
+.site-logo {
+  display: flex;
+  height: 175px;
+  width: auto;
+}
+
+.map {
+  width: 450px;
+  height: 300px;
+}
+
+.some-random-class {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  height: 175px;
+  width: 250px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+  font-family: "B612 Mono", monospace;
+  display: flex;
+}
+
+p {
+  font-family: "B612 Mono", monospace;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 2rem;
+  font-family: "VT323", monospace;
+  background-color: chocolate;
+  display: flex;
+}
+
+nav {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+nav li.active {
+  background-color: #d44a16;
+}
+
+#iNeedADivHere {
+  display: inline-flex;
+}
+
+#weather-summary-container {
+  border: 2px solid rgba(255, 239, 54, 0.6);
+  border-radius: 25px 25px 25px 25px;
+  background-color: rgb(28, 112, 94, .7);
+  margin-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  flex: 1;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.25rem;
+  z-index: 1;
+  margin-right: 5%;
+}
+
+#weather-forecast-container {
+  border: 2px solid rgba(255, 239, 54, 0.6);
+  border-radius: 25px 25px 25px 25px;
+  background-color: rgb(28, 112, 94, .7);
+  margin-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  flex: 1;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.25rem;
+  z-index: 1;
+  margin-left: 5%;
+}
+
+.forecast-pic {
+  width: 65%;
+  height: auto;
+  margin-top: 1rem;
+}
+
+.footer-date {
+  font-size: .8rem;
+  text-align: center;
+}
+
+/********************* PRESTON FORECAST TABLE *********************/
+
+.forecastCredit {
+  font-size: .9rem;
+}
+
+/********************* FORM  *********************/
+
+main div h1, fieldset legend {
+  font-family: 'Timmana', sans-serif;
+}
+
+.formDiv {
+  text-align: left;
+  margin: 15px;
+}
+
+.formDiv input, .formDiv select, .formDiv output, .formDiv textarea, input datalist, #rating {
+  margin-left: 17em;
+}
+
+.formDiv label {
+  position: absolute;
+  font-weight: bold;
+  width: 250px;
+  text-align: right;
+}
+
+#formSubmit {
+  transform: scale(1.5);
+  align-content: center;
+  margin-top: 10px;
+  border: .5px solid silver;
+}
+
+.form {
+  clear: both;
+  width: 700px;
+  margin: auto;
+  padding: 6px;
+  padding-top: 50px;
+  padding-bottom: 15px;
+  background-color: #1C705E;
+}
+
+form fieldset {
+  margin: width 40%;
+  margin: 15px;
+  border: 1.5px solid #b88a29;
+}
+
+#sliderVal {
+  font-weight: bold;
+}
+
+#makeThisFlex {
+  clear: both;
+}
+
+/********************* INDEX/HOME  *********************/
+
+.towns {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  flex-basis: 1032px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.firstTown, .secondTown, .thirdTown {
+  background: rgb(28, 112, 94, .7);
+  border: 3px solid silver;
+  margin: 3px;
+  width: 370px;
+}
+
+/********************* Gallery *********************/
+
+#gallery-images {
+  display: grid;
+}
+
+.gallery-pictures {
+  flex-basis: 40%;
+}
+
+/****************************************** Media Quarry ******************************************/
+
+@media screen and (max-width: 560px) {
+  .site-logo {
+    width: 150px;
+    height: 150px;
+  }
+  .map {
+    width: 300px;
+    height: 175px;
+    padding: 12px;
+  }
+  .weather-summary {
+    display: none;
+  }
+  .hide {
+    display: none;
+  }
+  nav>ul {
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+    padding: 8px;
+    background-color: chocolate;
+  }
+  li {
+    padding: 8px;
+    text-decoration: none;
+  }
+  .menu a {
+    display: block;
+    text-decoration: none;
+  }
+  #gallery-images {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    align-content: center;
+  }
+  .gallery-pictures>img {
+    width: 300px;
+    height: auto;
+  }
+  /********************* INDEX/HOME  *********************/
+  .towns {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  .firstTown, .secondTown, .thirdTown {
+    background: #afa07d;
+    border: 3px solid silver;
+    margin: 3px;
+    width: 370px;
+  }
+  /********************* PRESTON FORECAST TABLE *********************/
+  #weather-forecast-container {
+    display: none;
+  }
+  /********************* PRESTON WEATHER SUMMARY *********************/
+  #weather-summary-container>h2 {
+    font-size: 1rem;
+  }
+  #currentHumidityDiv, #currentWindSpeedDiv, #currentWindChillDiv {
+    display: none;
+  }
+  #currentTemperatureDiv {
+    font-size: 0rem;
+  }
+  #currentTemperature {
+    font-size: .95rem;
+  }
+  /********************* STORM CENTER *********************/
+  #mobileFriendly {
+    clear: both;
+    background-color: rgb(110, 128, 93);
+    max-width: 90%;
+    margin-bottom: 20px;
+  }
+  .formDiv {
+    display: block;
+    max-width: 80%;
+    text-align: left;
+  }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="css/normalize.css">
+     <link rel="stylesheet" href="css/small.css">
+     <link rel="stylesheet" href="css/medium.css">
+     <link rel="stylesheet" href="css/large.css">
+     <title>The Weather Site</title>
+</head>
+
+<body>
+     <header>
+          <div class="motto">
+               <img class="site-logo" src="images\logo.jpeg" alt="logo">
+               <div class="some-random-class">
+                    <h1 class="site-name">The Weather Site</h1>
+                    <h3 class="site-motto">We've got the best Weather!</h3>
+               </div>
+          </div>
+          <nav>
+               <button onclick="toggleMenu()" class="menu">&equiv;</button>
+               <ul id="menu" class="hide">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="preston.html">Preston</a></li>
+                    <li><a href="soda-springs.html">Soda Springs</a></li>
+                    <li><a href="fish-haven.html">Fish Haven</a></li>
+                    <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+               </ul>
+          </nav>
+     </header>
+     <main class="main">
+          <h1>Thanks for your submission. Stay safe out there!</h1>
+     </main>
+     <footer>
+          <h5>&#169;<span id="theCopyright-year"></span> | <a href="../../../index.html">Andrew Oborn</a>
+               <p class="footer-date">Current Date: <span id="displayCurrentDate"></span></p>
+          </h5>
+     </footer>
+     <script src="scripts/currentdate.js"></script>
+     <script src="scripts/hamburger.js"></script>
+     <script src="scripts/windchill.js"></script>
+</body>
+</html>

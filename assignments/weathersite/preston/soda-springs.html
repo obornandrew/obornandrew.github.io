@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>The Weather Site</title>
+</head>
+<body>
+    <header>
+        <div class="motto">
+            <img class="site-logo" src="images\logo.jpeg" alt="logo">
+            <div class="some-random-class">
+                <h1 class="site-name">The Weather Site</h1>
+                <h3 class="site-motto">We've got the best Weather!</h3>
+            </div>
+        </div>
+        <nav>
+            <button onclick="toggleMenu()" class="menu">Menu</button>
+            <ul id="menu" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li class="active"><a href="soda-springs.html">Soda Springs</a></li>
+                <li><a href="fish-haven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <div id="iNeedADivHere">
+            <div id="weather-summary-container">
+                <h2>Soda Springs Weather Summary</h2>
+                <div id="sodaSpringsTemperatureDiv">Temperature: <span id="sodaSpringsCurrentTemperature"></span>
+                </div>
+                <div id="sodaSpringsHumidityDiv">Humidity: <span id="sodaSpringsCurrentHumidity"></span></div>
+                <div id="sodaSpringsWindSpeedDiv">Wind Speed: <span id="sodaSpringsCurrentWindSpeed"></span></div>
+                <div id="sodaSpringsWindChillDiv">Wind Chill: <span id="sodaSpringsCurrentWindChill"></span></div>
+            </div>
+            <div id="weather-forecast-container">
+                <h2>Soda Springs Weather Forecast</h2>
+                <div class=forecast>
+                    <section id="forecastTable">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Day</th>
+                                    <th id="sodaSprings-day0"></th>
+                                    <th id="sodaSprings-day1"></th>
+                                    <th id="sodaSprings-day2"></th>
+                                    <th id="sodaSprings-day3"></th>
+                                    <th id="sodaSprings-day4"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr id=high-temps>
+                                    <td>High</td>
+                                    <td id="sodaSprings-high0"></td>
+                                    <td id="sodaSprings-high1"></td>
+                                    <td id="sodaSprings-high2"></td>
+                                    <td id="sodaSprings-high3"></td>
+                                    <td id="sodaSprings-high4"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <div class="forecastCredit">data from OpenWeatherMap.org</div>
+                </div>
+            </div>
+        </div>
+        <div>
+        </div>
+        <article class="section4">
+            <h1>Rain... in Preston</h1>
+            <p>Will it ever stop?</p>
+            <a href="#"><img src="images/rain.jpg" alt="rain"></a>
+        </article>
+    </main>
+    <div>
+        <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46943.96064633286!2d-111.62379147650239!3d42.661407516812865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8755968bb0047ae5%3A0x9d3970a1a6df8e12!2sSoda+Springs%2C+ID+83276!5e0!3m2!1sen!2sus!4v1553032495381"
+            frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <footer>
+        <h5>&#169;<span id="theCopyright-year"></span> | <a href="../../../index.html">Andrew Oborn</a>
+            <p class="footer-date">Current Date: <span id="displayCurrentDate"></span></p>
+        </h5>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/soda-springs-weather.js"></script>
+</body>
+</html>

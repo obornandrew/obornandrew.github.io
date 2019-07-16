@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>The Weather Site</title>
+</head>
+<body>
+    <header>
+        <div class="motto">
+            <img class="site-logo" src="images\logo.jpeg" alt="logo">
+            <div class="some-random-class">
+                <h1 class="site-name">The Weather Site</h1>
+                <h3 class="site-motto">We've got the best Weather!</h3>
+            </div>
+        </div>
+        <nav>
+            <button onclick="toggleMenu()" class="menu">Menu</button>
+            <ul id="menu" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="soda-springs.html">Soda Springs</a></li>
+                <li class="active"><a href="fish-haven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <div id="weathersummartdiv">
+            <div id="weather-summary-container">
+                <h2>Fish Haven - Weather Summary</h2>
+                <div id="prestonCurrentTemperatureDiv">Temperature: <span id="fishHavenCurrentTemperature"></span></div>
+                <div id="prestonCurrentHumidityDiv">Humidity: <span id="fishHavenCurrentHumidity"></span></div>
+                <div id="prestonCurrentWindSpeedDiv">Wind Speed: <span id="fishHavenCurrentWindSpeed"></span></div>
+                <div id="prestonCurrentWindChillDiv">Wind Chill: <span id="fishHavenCurrentWindChill"></span></div>
+            </div>
+            <div id="weather-forecast-container">
+                <h2>Fish Haven Weather Forecast</h2>
+                <div class=forecast>
+                    <section id="forecastTable">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Day</th>
+                                    <th id="fishHaven-day0"></th>
+                                    <th id="fishHaven-day1"></th>
+                                    <th id="fishHaven-day2"></th>
+                                    <th id="fishHaven-day3"></th>
+                                    <th id="fishHaven-day4"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr id=high-temps>
+                                    <td>High</td>
+                                    <td id="fishHaven-high0"></td>
+                                    <td id="fishHaven-high1"></td>
+                                    <td id="fishHaven-high2"></td>
+                                    <td id="fishHaven-high3"></td>
+                                    <td id="fishHaven-high4"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <div class="forecastCredit">data from OpenWeatherMap.org</div>
+                </div>
+            </div>
+        </div>
+        <div>
+        </div>
+        <article class="section4">
+            <h1>Rain in Preston</h1>
+            <p>It has been raining for 10 weeks with no end in sight!</p>
+            <a href="#"><img src="images/rain.jpg" alt="rain"></a>
+        </article>
+    </main>
+    <div>
+        <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d740.8205975960116!2d-111.39640166961145!3d42.03712455105658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875415e9bdab006f%3A0xc1864ed86dd2b0e4!2sFish+Haven%2C+ID+83287!5e0!3m2!1sen!2sus!4v1553029659400"
+            frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <footer>
+        <h5>&#169;<span id="theCopyright-year"></span> | <a href="../../../index.html">Andrew Oborn</a>
+            <p class="footer-date">Current Date: <span id="displayCurrentDate"></span></p>
+        </h5>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/fish-haven-weather.js"></script>
+</body>
+</html>
