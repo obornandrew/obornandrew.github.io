@@ -71,7 +71,7 @@
                          <div class="formDiv">
                               <label for="location" class="formLocationInfo">Location: </label><br>
                               <select name="location">
-                                   <option selected disabled>Select Hotel</option>
+                                   <option selected disabled>-</option>
                                    <option value="bountiful">Bountiful, UT, USA</option>
                                    <option value="gilbert">Gilbert, AZ, USA</option>
                                    <option value="paris">Paris, France</option>
@@ -80,12 +80,12 @@
                          </div>
                          <!--  ******** STAY DATE IN ********  -->
                          <div class="formDiv">
-                              <label for="dateIn" class="formLocationInfo">Date In: </label><br>
+                              <label for="dateIn" class="formLocationInfo">Check In: </label><br>
                               <input type="date" id="dateIn" name="dateIn">
                          </div>
                          <!--  ******** STAY DATE OUT ********  -->
                          <div class="formDiv">
-                              <label for="dateOut" class="formLocationInfo">Date Out: </label><br>
+                              <label for="dateOut" class="formLocationInfo">Check Out: </label><br>
                               <input type="date" id="dateOut" name="dateOut">
                          </div>
                          <!--  ******** ROOM TYPE ********  -->
@@ -93,6 +93,7 @@
                               <label for="roomType" class="formLocationInfo">Room Type:</label><br>
                               <input list="roomType" name="roomType">
                               <datalist id="roomType">
+                                   <option selected disabled>-</option>
                                    <option value="Economy Suite"></option>
                                    <option value="Deluxe Suite"></option>
                               </datalist>
