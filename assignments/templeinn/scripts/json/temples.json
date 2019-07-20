@@ -1,0 +1,219 @@
+[
+     {
+          "temple": "Bountiful Utah Temple",
+          "address": "640 S Bountiful Blvd",
+          "city": "Bountiful",
+          "state": "Utah",
+          "zip": "84010",
+          "country": "USA",
+          "phone": "801-296-2100",
+          "email": "Unavailable",
+          "ordinanceSchedule": "6AM and every 30min from 7AM until 8PM.",
+          "services": [
+               {
+                    "service": "Clothing rental available"
+               },
+               {
+                    "service": "Cafeteria available"
+               },
+               {
+                    "service": "No patron housing available"
+               },
+               {
+                    "service": "Distribution center nearby"
+               }
+          ],
+          "closures": [
+               {
+                    "start": "2019-4-6",
+                    "end": "2019-4-6"
+               },
+               {
+                    "start": "2019-7-4",
+                    "end": "2019-7-4"
+               },
+               {
+                    "start": "2019-7-16",
+                    "end": "2019-7-20"
+               },
+               {
+                    "start": "2019-7-22",
+                    "end": "2019-8-5"
+               },
+               {
+                    "start": "2019-10-5",
+                    "end": "2019-10-5"
+               },
+               {
+                    "start": "2019-11-28",
+                    "end": "2019-11-28"
+               },
+               {
+                    "start": "2019-12-24",
+                    "end": "2019-12-24"
+               },
+               {
+                    "start": "2019-12-25",
+                    "end": "2019-12-25"
+               },
+               {
+                    "start": "2019-12-31",
+                    "end": "2019-12-31"
+               }
+          ],
+          "announced": "1990-2-2",
+          "groundbreaking": "1992-5-2"
+     },
+     {
+          "temple": "Gilbert Arizona Temple",
+          "address": "3301 S Greenfield Rd",
+          "city": "Gilbert",
+          "state": "Arizona",
+          "zip": "85297",
+          "country": "USA",
+          "phone": "480-822-5000",
+          "email": "Unavailable",
+          "ordinanceSchedule": "Every 45 minutes starting at 5:30AM",
+          "services": [
+               {
+                    "service": "Clothing rental available"
+               },
+               {
+                    "service": "No cafeteria available"
+               },
+               {
+                    "service": "No patron housing available"
+               },
+               {
+                    "service": "Distribution center nearby"
+               }
+          ],
+          "closures": [
+               {
+                    "start": "2019-4-6",
+                    "end": "2019-4-6"
+               },
+               {
+                    "start": "2019-7-4",
+                    "end": "2019-7-4"
+               },
+               {
+                    "start": "2019-9-30",
+                    "end": "2019-10-14"
+               },
+               {
+                    "start": "2019-11-27",
+                    "end": "2019-11-28"
+               },
+               {
+                    "start": "2019-12-24",
+                    "end": "2019-12-25"
+               },
+               {
+                    "start": "2019-12-31",
+                    "end": "2019-12-31"
+               }
+          ],
+          "announced": "2008-4-10",
+          "groundbreaking": "2010-11-13"
+     },
+     {
+          "temple": "Paris France Temple",
+          "address1": "46 Boulevard Saint Antoine",
+          "address2": "78150 Le Chesnay",
+          "city": "Paris",
+          "country": "France",
+          "phone": "(33) 970-73-70-00",
+          "email": "Unavailable",
+          "ordinanceSchedule": "8:30AM, 11:00AM, 1:30PM",
+          "services": [
+               {
+                    "service": "No clothing rental available"
+               },
+               {
+                    "service": "No cafeteria available"
+               },
+               {
+                    "service": "Patron housing available"
+               },
+               {
+                    "service": "No distribution center nearby"
+               }
+          ],
+          "closures": [
+               {
+                    "start": "2019-4-6",
+                    "end": "2019-4-6"
+               },
+               {
+                    "start": "2019-6-3",
+                    "end": "2019-6-17"
+               },
+               {
+                    "start": "2019-10-5",
+                    "end": "2019-10-5"
+               },
+               {
+                    "start": "2019-12-24",
+                    "end": "2019-12-25"
+               },
+               {
+                    "start": "2019-12-31",
+                    "end": "2019-12-31"
+               }
+          ],
+          "announced": "2011-10-1",
+          "groundbreaking": "2012-8-24"
+     },
+     {
+          "temple": "Preston England Temple",
+          "address": "Temple Way, Hartwood Green Chorley",
+          "city": "Lancashire",
+          "country": "England PR6 7EQ, United Kingdom",
+          "phone": "(44) 1257-226-100",
+          "email": "Unavailable",
+          "ordinanceSchedule": "On the hour from 8:00AM to 3:00PM",
+          "services": [
+               {
+                    "service": "Clothing rental available"
+               },
+               {
+                    "service": "Cafeteria available"
+               },
+               {
+                    "service": "Patron housing available"
+               },
+               {
+                    "service": "Distribution center nearby"
+               }
+          ],
+          "closures": [
+               {
+                    "start": "2019-4-6",
+                    "end": "2019-4-6"
+               },
+               {
+                    "start": "2019-7-15",
+                    "end": "2019-7-29"
+               },
+               {
+                    "start": "2019-10-5",
+                    "end": "2019-7-20"
+               },
+               {
+                    "start": "2019-12-17",
+                    "end": "2019-12-21"
+               },
+               {
+                    "start": "2019-12-24",
+                    "end": "2019-12-28"
+               },
+               {
+                    "start": "2019-12-31",
+                    "end": "2019-12-31"
+               }
+          ],
+          "announced": "1990-2-2",
+          "groundbreaking": "1992-5-2"
+     }
+]

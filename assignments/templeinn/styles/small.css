@@ -1,0 +1,382 @@
+/****************************** FONT FAMILY *****************************/
+
+#logo1 {
+     font-family: 'Cinzel Decorative', cursive;
+     /*void it*/
+     font-size: 3rem;
+}
+
+#logo2 {
+     font-family: 'Cinzel', serif;
+     /*logo*/
+     font-size: 3rem;
+}
+
+#logo3 {
+     font-family: 'Gentium Book Basic', serif;
+     font-size: 3rem;
+}
+
+#logo4 {
+     font-family: 'Permanent Marker', cursive;
+     font-size: 3rem;
+}
+
+#logo5 {
+     font-family: 'Caveat Brush', cursive;
+     font-size: 3rem;
+}
+
+/************************************************************************/
+
+html {
+     width: 100%;
+}
+
+body {
+     background-color: #FAFAFA;
+}
+
+/****************************** COLORS ***********************************
+*************************************************************************/
+
+/****************************** HEADER **********************************/
+
+nav li.active {
+     background-color: #62b4f4;
+}
+
+.some-random-class {
+     display: grid;
+     grid-template-rows: 10px 1fr 10px;
+     grid-template-columns: 5% 175px 1fr;
+     align-items: center;
+     background: #FAFAFA;
+     background: linear-gradient(to right, #FAFAFA 0%, #2085C1 100%);
+}
+
+#logo-pic-large-screen {
+     height: 204px;
+     width: 150px;
+     margin: 0px;
+     grid-column-start: 2;
+     grid-row-start: 2;
+     grid-row-end: 2;
+}
+
+.site-name {
+     font-family: 'Cinzel', serif;
+     font-size: 4rem;
+     grid-column-start: 3;
+     grid-row-start: 2;
+     grid-row-end: 2;
+     text-shadow: 0px 40px 13px rgba(250, 250, 250, 0.42);
+}
+
+.menuNav {
+     font-size: 1.5rem;
+     list-style-type: none;
+     font-family: 'Gentium Book Basic', serif;
+}
+
+.menuNav>a {
+     text-decoration: none;
+}
+
+#contact {
+     padding: 0px 25px 5px 0px;
+     text-align: right;
+     display: grid;
+     color: #fafafa;
+     font-size: 1.25rem;
+}
+
+/************************************************************************/
+
+/****************************** MAIN ************************************/
+
+.bookNowButton {
+     color: rgb(250, 250, 250);
+     font-size: 26px;
+     line-height: 26px;
+     padding: 25px;
+     margin: 50px 50px 50px 50px;
+     border-radius: 8px;
+     font-family: 'Gentium Book Basic', serif;
+     text-decoration: none;
+     font-weight: bold;
+     background-image: linear-gradient(to right, #002171 0%, rgb(32, 133, 193) 100%);
+     box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px;
+     border: 2px solid rgb(28, 110, 164);
+     float: right;
+}
+
+.bookNowButton:hover {
+     background-image: linear-gradient(to right, rgb(32, 133, 193) 0%, #002271d0 100%);
+     color: #000;
+}
+
+.indexIntro {
+     font-family: 'Cinzel', serif;
+     font-size: 2.25rem;
+     padding-top: 15px;
+     margin: 40px 15px 15px 40px;
+}
+
+.introInfo {
+     font-family: 'Gentium Book Basic', serif;
+     font-size: 1.5rem;
+}
+
+figcaption {
+     text-align: center;
+}
+
+.figOfImg {
+     margin: 0px 30px 30px 0px;
+     padding: 0px;
+     padding-bottom: 0px;
+     max-width: auto;
+     /* float: left; */
+}
+
+.home-page-image {
+     width: 90%;
+     height: auto;
+     box-shadow: 0px 5px 30px 7px rgba(0, 0, 0, 0.9);
+     border-radius: .4em;
+     margin: 0px 0px 0px 0px;
+}
+
+#sdTempleFigCaption {
+     margin: 0px 0px 10px 0px;
+}
+
+.creditLink {
+     font-size: .8rem;
+}
+
+.visitOther {
+     font-family: 'Cinzel', serif;
+     font-size: 1.75rem;
+     padding-top: 15px;
+     margin: 40px 15px 15px 40px;
+     text-align: left;
+}
+
+#SSFA {
+     font-family: 'Gentium Book Basic', serif;
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: space-between;
+}
+
+#SS, #FA {
+     padding-left: 50px;
+     max-width: 500px;
+     padding-bottom: 20px;
+}
+
+#container1, #container2 {
+     margin-top: 2%;
+     background-color: #0e3d58;
+     box-shadow: 0px 5px 50px 0px rgba(0, 0, 0, 0.92);
+     border-radius: 30px;
+     color: #fafafa;
+}
+
+.FAItem, .SSItem {
+     padding: 10px 30px 20px 20px;
+     font-size: 1.5rem;
+}
+
+.specialHead {
+     font-size: 1.85rem;
+     font-weight: bold;
+     padding-top: 25px;
+     padding-left: 25px;
+}
+
+/* #fourTemplesSection {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: 1fr 1fr;
+     grid-gap: 30px;
+     margin: auto;
+} */
+
+.temple-page-image {
+     width: 500px;
+     height: auto;
+     box-shadow: 0px 5px 30px 7px rgba(0, 0, 0, 0.9);
+     border-radius: .4em;
+     /* margin: 0px 0px 0px 0px; */
+     /* float: left; */
+}
+
+/* #templeOne-BountifulUtah {
+     grid-column-start: 1;
+     grid-row-start: 1;
+}
+#templeTwo-GilbertArizona {
+     grid-column-start: 2;
+     grid-row-start: 1;
+}
+#templeThree-ParisFrance {
+     grid-column-start: 3;
+     grid-row-start: 1;
+}
+#templeFour-PrestonEngland {
+     grid-column-start: 4;
+     grid-row-start: 1;
+} */
+
+#bountifulTempleInfoFromJSON, #gilbertTempleInfoFromJSON, #parisTempleInfoFromJSON, #prestonTempleInfoFromJSON {
+     color: #000;
+     font-family: 'Gentium Book Basic', serif;
+     font-size: 1.35rem;
+     clear: both;
+}
+
+.bountifulTempleInfoFromJSON, .gilbertTempleInfoFromJSON, .parisTempleInfoFromJSON, .prestonTempleInfoFromJSON {
+     padding: 0px;
+}
+
+.formDiv {
+     padding: .4%;
+}
+
+.sssuuubbbmmmiiittt {
+     padding-top: 50px;
+     margin-left: 50px;
+     margin-bottom: 50px;
+}
+
+#formSubmit {
+     color: rgb(255, 255, 255);
+     font-size: 1rem;
+     padding: 8px;
+     /* margin-top: 15px; */
+     border-radius: 0px;
+     font-family: 'Cinzel', serif;
+     text-decoration: none;
+     background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%);
+     box-shadow: rgb(0, 0, 0) 5px 5px 5px;
+     border: 2px solid rgb(28, 110, 164);
+     display: inline-block;
+}
+
+#formSubmit:hover {
+     background: #1C6EA4;
+}
+
+#formSubmit:active {
+     background: #144E75;
+}
+
+#mobileFriendly {
+     display: flex;
+     width: 96%;
+     flex-direction: column;
+}
+
+body {
+     margin: 5%;
+}
+
+.sssuuubbbmmmittt {
+     padding-top: 50px;
+     margin-left: 50px;
+     margin-bottom: 5px;
+}
+
+#makeLikeAButton {
+     color: rgb(255, 255, 255);
+     font-size: 16px;
+     line-height: 16px;
+     padding: 6px;
+     border-radius: 10px;
+     text-decoration: none;
+     background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%);
+     box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px;
+     border: 2px solid rgb(28, 110, 164);
+     display: inline-block;
+     margin-bottom: 15px;
+}
+
+.makeLikeAButton:hover {
+     background: rgb(137, 146, 153);
+}
+
+.makeLikeAButton:active {
+     background: #144E75;
+}
+
+/************************************************************************/
+
+/****************************** FOOTER **********************************/
+
+footer {
+     display: grid;
+     grid-template-rows: 1fr;
+     grid-template-columns: 1fr;
+     background: #FAFAFA;
+     background: linear-gradient(to right, #2085C1 0%, #FAFAFA 100%);
+     font-weight: bold;
+     font-size: 1.25rem;
+     align-items: center;
+     padding: 15px;
+     font-family: 'Cinzel', serif;
+}
+
+footer>h3 {
+     margin-left: 0px;
+}
+
+/************************************************************************/
+
+@media screen and (max-width: 560px) {
+     .hide {
+          display: none;
+     }
+     .menu a {
+          display: block;
+          text-decoration: none;
+     }
+     #fourTemplesSection {
+          display: grid;
+          grid-template-columns: 2%, 1fr, 2%;
+          grid-template-rows: 1fr;
+          grid-gap: 30px;
+          margin: auto;
+          justify-items: center;
+     }
+     #templeOne-BountifulUtah, #templeTwo-GilbertArizona, #templeThree-ParisFrance, #templeFour-PrestonEngland {
+          grid-column-start: 2;
+     }
+     img {
+          width: 310px;
+     }
+     .site-name {
+          display: none;
+     }
+     #some-random-class {
+          display: grid;
+     }
+     img #logo-pic-large-screen {
+          justify-self: center;
+          justify-content: space-around;
+     }
+     .some-random-class {
+          display: flex;
+     }
+     .temple-page-image {
+          width: 90%;
+     }
+     #fourTemplesSection {
+          font-size: 1rem;
+     }
+     .bookNowButton {
+          clear: both;
+     }
+}

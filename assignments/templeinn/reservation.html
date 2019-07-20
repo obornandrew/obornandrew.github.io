@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Cinzel|Cinzel+Decorative|Gentium+Book+Basic|Permanent+Marker"
+          rel="stylesheet">
+     <title>Reservation | The Temple Inn & Suites</title>
+     <link rel="stylesheet" href="css/normalize.css">
+     <link rel="stylesheet" href="css/small.css">
+     <link rel="stylesheet" href="css/medium.css">
+     <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+     <header>
+          <div class="some-random-class">
+               <img id="logo-pic-large-screen" src="images/logo" alt="logo">
+               <h1 class="site-name">The Temple Inn & Suites</h1>
+          </div>
+          <nav>
+               <button onclick="toggleMenu()" class="menu">Menu</button>
+               <ul id="menu" class="hide">
+                    <li class="menuNav"><a href="index.html">Home</a></li>
+                    <li class="menuNav"><a href="temple.html">Temples</a></li>
+                    <li class="active menuNav"><a href="reservation.html">Reservation</a></li>
+                    <li class="menuNav"><a href="services.html">Services</a></li>
+                    <li class="menuNav"><a href="contact.html">Contact Us</a></li>
+               </ul>
+               <ul>
+                    <li id="contact">1 (800) 1-TEMPLE</li>
+               </ul>
+          </nav>
+     </header>
+     <main>
+          <div class="form" id="mobileFriendly">
+               <h1>Booking</h1>
+               <form action="thanks.html" method="GET">
+                    <!--  ********  ******** PERSONAL INFO ********  ********  -->
+                    <fieldset>
+                         <legend>Personal Info</legend>
+                         <!-- ******** NAME ********  -->
+                         <div class="formDiv">
+                              <label for="fullName" class="formPersonalInfo">Full Name: </label><br>
+                              <input type="text" id="fullName" name="fullName" required>
+                         </div>
+                         <!--  ******** PHONE NUMBER ********  -->
+                         <div class="formDiv">
+                              <label for="phoneNumber" class="formPersonalInfo">Phone Number: </label><br>
+                              <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                         </div>
+                         <!--  ******** EMAIL ********  -->
+                         <div class="formDiv">
+                              <label for="email" class="formPersonalInfo">E-mail: </label><br>
+                              <input type="email" id="email" name="email" placeholder="email@address.com">
+                         </div>
+                         <!--  ******** HOME STATE ********  -->
+                         <div class="formDiv">
+                              <label for="state" class="formPersonalInfo">Home State: </label><br>
+                              <input type="text" id="state" name="state" required>
+                         </div>
+                         <!--  ******** COUNTRY ********  -->
+                         <div class="formDiv">
+                              <label for="country" class="formPersonalInfo">Country: </label><br>
+                              <input type="text" id="country" name="country" required>
+                         </div>
+                    </fieldset>
+                    <!--  ********  ******** LOCATION ********  ********  -->
+                    <fieldset>
+                         <legend> Hotel </legend>
+                         <!--  ******** SELECT HOTEL ********  -->
+                         <div class="formDiv">
+                              <label for="location" class="formLocationInfo">Location: </label><br>
+                              <select name="location">
+                                   <option selected disabled>Select Hotel</option>
+                                   <option value="bountiful">Bountiful, UT, USA</option>
+                                   <option value="gilbert">Gilbert, AZ, USA</option>
+                                   <option value="paris">Paris, France</option>
+                                   <option value="preston">Preston, England</option>
+                              </select>
+                         </div>
+                         <!--  ******** STAY DATE IN ********  -->
+                         <div class="formDiv">
+                              <label for="dateIn" class="formLocationInfo">Date In: </label><br>
+                              <input type="date" id="dateIn" name="dateIn">
+                         </div>
+                         <!--  ******** STAY DATE OUT ********  -->
+                         <div class="formDiv">
+                              <label for="dateOut" class="formLocationInfo">Date Out: </label><br>
+                              <input type="date" id="dateOut" name="dateOut">
+                         </div>
+                         <!--  ******** ROOM TYPE ********  -->
+                         <div class="formDiv">
+                              <label for="roomType" class="formLocationInfo">Room Type:</label><br>
+                              <input list="roomType" name="roomType">
+                              <datalist id="roomType">
+                                   <option value="Economic Suite"></option>
+                                   <option value="Presidential Suite"></option>
+                              </datalist>
+                         </div>
+                         <!--  ******** NUMBER OF ROOMS ********  -->
+                         <div class="formDiv">
+                              <label for="numOfRooms" class="numOfRooms">Number of Rooms: </label><br>
+                              <select name="numOfRooms">
+                                   <option selected disabled>Select Region</option>
+                                   <option value="one">1</option>
+                                   <option value="two">2</option>
+                                   <option value="three">3</option>
+                              </select>
+                         </div>
+                         <!--  ******** ADDITIONAL INFO & COMMENTS ********  -->
+                         <div class="formDiv formLocationInfo">
+                              <label for="extraInfo" name="extraInfo">Special Requests? </label><br>
+                              <textarea name=" otherInfo" id="otherInfo" cols="30" rows="5"></textarea>
+                         </div>
+                    </fieldset>
+                    <!--  ******** SUBMIT BUTTON ********  -->
+                    <div class="formDiv">
+                         <a id="formSubmit" class="submit" href="thanks.html">Submit</a>
+                    </div>
+               </form>
+          </div>
+     </main>
+     <footer>
+          <h3>&#169;<span id="theCopyright-year"></span> | <a href="https://obornandrew.github.io">Andrew Oborn</a> |
+               Temple Inn & Suites | <a href="resource-reference.html">Resources</a></h3>
+     </footer>
+     <script src="scripts/hamburger.js"></script>
+     <script src="scripts/copyright-year.js"></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Cinzel|Cinzel+Decorative|Gentium+Book+Basic|Permanent+Marker"
+          rel="stylesheet">
+     <title>Temple | The Temple Inn & Suites</title>
+     <link rel="stylesheet" href="css/normalize.css">
+     <link rel="stylesheet" href="css/small.css">
+     <link rel="stylesheet" href="css/medium.css">
+     <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+     <header>
+          <div class="some-random-class">
+               <img id="logo-pic-large-screen" src="images/logo.png" alt="logo">
+               <h1 class="site-name">The Temple Inn & Suites</h1>
+          </div>
+          <nav>
+               <button onclick="toggleMenu()" class="menu">Menu</button>
+               <ul id="menu" class="hide">
+                    <li class="menuNav"><a href="index.html">Home</a></li>
+                    <li class="active menuNav"><a href="temple.html">Temples</a></li>
+                    <li class="menuNav"><a href="reservation.html">Reservation</a></li>
+                    <li class="menuNav"><a href="services.html">Services</a></li>
+                    <li class="menuNav"><a href="contact.html">Contact Us</a></li>
+               </ul>
+               <ul>
+                    <li id="contact">1 (800) 1-TEMPLE</li>
+               </ul>
+          </nav>
+     </header>
+     <main>
+          <span id="fourTemplesSection">
+               <!-- Bountiful -->
+               <section id="templeOne-BountifulUtah">
+                    <h1 class="indexIntro">Bountiful Utah</h1>
+                    <section class="introInfo">
+                         <p>Current temperature: <span id="bountiful-utah-current-temp"></span></p>
+                    </section>
+                    <figure class="figOfImg">
+                         <img class="temple-page-image"
+                              src="images/resized/four-temples/bountiful-temple-large.jpg" alt="Bountiful, Utah"
+                              srcset="">
+                         <figcaption><a
+                                   href="https://www.lds.org/temples/details/bountiful-utah-temple?lang=eng">Bountiful,
+                                   Utah Temple</a>
+                         </figcaption>
+                    </figure>
+                    <section id="bountifulTempleInfoFromJSON">
+                         <div class="bountifulTempleInfoFromJSON" id="bountifulAddress"></div>
+                         <span class="bountifulTempleInfoFromJSON" id="bountifulCity"></span>
+                         <span class="bountifulTempleInfoFromJSON" id="bountifulState"></span>
+                         <div class="bountifulTempleInfoFromJSON" id="bountifulZip"></div>
+                         <span class="bountifulTempleInfoFromJSON" id="bountifulCountry"></span><br>
+                         <div class="bountifulTempleInfoFromJSON" id="bountifulPhone"></div>
+                         <div class="bountifulTempleInfoFromJSON" id="bountifulEmail"></div><br>
+                         <div class="bountifulTempleInfoFromJSON" id="bountifulAnnounced"></div>
+                         <div class="bountifulTempleInfoFromJSON" id="bountifulGroundbreaking"></div><br>
+                         <div class="bountifulTempleInfoFromJSON" id="bountifulOrdSchedule"></div><br>
+                         <div class="bountifulTempleInfoFromJSON" id="bountifulServices0"></div><br>
+                         <div class="bountifulTempleInfoFromJSON" id="bountifulClosureStart"></div><br>
+                    </section>
+               </section>
+               <!-- Gilbert -->
+               <section id="templeTwo-GilbertArizona">
+                    <h1 class="indexIntro">Gilbert Arizona</h1>
+                    <section class="introInfo">
+                         <p>Current temperature: <span id="gilbert-arizona-current-temp"></span>
+                         </p>
+                    </section>
+                    <figure class="figOfImg">
+                         <img class="temple-page-image"
+                              src="images/resized/four-temples/gilbert-arizona-temple-large.jpg"
+                              alt="Gilbert, Arizona" srcset="">
+                         <figcaption><a
+                                   href="https://www.lds.org/temples/details/gilbert-arizona-temple?lang=eng">Gilbert,
+                                   Arizona Temple</a>
+                         </figcaption>
+                    </figure>
+                    <section id="gilbertTempleInfoFromJSON">
+                         <div class="gilbertTempleInfoFromJSON" id="gilbertAddress"></div>
+                         <span class="gilbertTempleInfoFromJSON" id="gilbertCity"></span>
+                         <span class="gilbertTempleInfoFromJSON" id="gilbertState"></span>
+                         <div class="gilbertTempleInfoFromJSON" id="gilbertZip"></div>
+                         <span class="gilbertTempleInfoFromJSON" id="gilbertCountry"></span><br>
+                         <div class="gilbertTempleInfoFromJSON" id="gilbertPhone"></div>
+                         <div class="gilbertTempleInfoFromJSON" id="gilbertEmail"></div><br>
+                         <div class="gilbertTempleInfoFromJSON" id="gilbertAnnounced"></div>
+                         <div class="gilbertTempleInfoFromJSON" id="gilbertGroundbreaking"></div><br>
+                         <div class="gilbertTempleInfoFromJSON" id="gilbertOrdSchedule"></div><br>
+                         <div class="gilbertTempleInfoFromJSON" id="gilbertServices0"></div><br>
+                         <div class="gilbertTempleInfoFromJSON" id="gilbertClosureStart"></div><br>
+                    </section>
+               </section>
+               <!-- Paris -->
+               <section id="templeThree-ParisFrance">
+                    <h1 class="indexIntro">Paris France</h1>
+                    <section class="introInfo">
+                         <p>Current temperature: <span id="paris-france-current-temp"></span></p>
+                    </section>
+                    <figure class="figOfImg">
+                         <img class="temple-page-image" src="images/resized/four-temples/paris-temple-large.jpg"
+                              alt="Paris, France" srcset="">
+                         <figcaption><a href="https://www.lds.org/temples/details/paris-france-temple?lang=eng">Paris,
+                                   France Temple</a>
+                         </figcaption>
+                    </figure>
+                    <section id="parisTempleInfoFromJSON">
+                         <div class="parisTempleInfoFromJSON" id="parisAddress1"></div>
+                         <div class="parisTempleInfoFromJSON" id="parisAddress2"></div>
+                         <span class="parisTempleInfoFromJSON" id="parisCity"></span>
+                         <span class="parisTempleInfoFromJSON" id="parisCountry"></span><br>
+                         <div class="parisTempleInfoFromJSON" id="parisPhone"></div>
+                         <div class="parisTempleInfoFromJSON" id="parisEmail"></div><br>
+                         <div class="parisTempleInfoFromJSON" id="parisAnnounced"></div>
+                         <div class="parisTempleInfoFromJSON" id="parisGroundbreaking"></div><br>
+                         <div class="parisTempleInfoFromJSON" id="parisOrdSchedule"></div><br>
+                         <div class="parisTempleInfoFromJSON" id="parisServices0"></div><br>
+                         <div class="parisTempleInfoFromJSON" id="parisClosureStart"></div><br>
+                    </section>
+               </section>
+               <!-- Preston -->
+               <section id="templeFour-PrestonEngland">
+                    <h1 class="indexIntro">Preston England</h1>
+                    <section class="introInfo">
+                         <p>Current temperature: <span id="preston-england-current-temp"></span>
+                         </p>
+                    </section>
+                    <figure class="figOfImg">
+                         <img class="temple-page-image"
+                              src="images/resized/four-temples/preston-temple-large.jpg" alt="Preston, England"
+                              srcset="">
+                         <figcaption><a
+                                   href="https://www.lds.org/temples/details/preston-england-temple?lang=eng">Preston,
+                                   England Temple</a>
+                         </figcaption>
+                    </figure>
+                    <section id="prestonTempleInfoFromJSON">
+                         <div class="prestonTempleInfoFromJSON" id="prestonAddress"></div>
+                         <span class="prestonTempleInfoFromJSON" id="prestonCity"></span>
+                         <span class="prestonTempleInfoFromJSON" id="prestonCountry"></span><br>
+                         <div class="prestonTempleInfoFromJSON" id="prestonPhone"></div>
+                         <div class="prestonTempleInfoFromJSON" id="prestonEmail"></div><br>
+                         <div class="prestonTempleInfoFromJSON" id="prestonAnnounced"></div>
+                         <div class="prestonTempleInfoFromJSON" id="prestonGroundbreaking"></div><br>
+                         <div class="prestonTempleInfoFromJSON" id="prestonOrdSchedule"></div><br>
+                         <div class="prestonTempleInfoFromJSON" id="prestonServices0"></div><br>
+                         <div class="prestonTempleInfoFromJSON" id="prestonClosureStart"></div><br>
+                    </section>
+               </section>
+               </iv>
+     </main>
+     <footer>
+          <h3>&#169;<span id="theCopyright-year"></span> | <a href="https://obornandrew.github.io">Andrew Oborn</a> |
+               Temple Inn & Suites | <a href="resource-reference.html">Resources</a></h3>
+     </footer>
+     <script src="scripts/hamburger.js"></script>
+     <script src="scripts/copyright-year.js"></script>
+     <script src="scripts/temple-temps.js"></script>
+     <script src="scripts/closure.js"></script>
+</body>
+</html>

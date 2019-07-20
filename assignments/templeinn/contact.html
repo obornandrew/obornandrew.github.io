@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Cinzel|Cinzel+Decorative|Gentium+Book+Basic|Permanent+Marker"
+          rel="stylesheet">
+     <title>Contact | The Temple Inn & Suites</title>
+     <link rel="stylesheet" href="css/normalize.css">
+     <link rel="stylesheet" href="css/small.css">
+     <link rel="stylesheet" href="css/medium.css">
+     <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+     <header>
+          <div class="some-random-class">
+               <img id="logo-pic-large-screen" src="images/logo.png" alt="logo">
+               <h1 class="site-name">The Temple Inn & Suites</h1>
+          </div>
+          <nav>
+               <button onclick="toggleMenu()" class="menu">Menu</button>
+               <ul id="menu" class="hide">
+                    <li class="menuNav"><a href="index.html">Home</a></li>
+                    <li class="menuNav"><a href="temple.html">Temples</a></li>
+                    <li class="menuNav"><a href="reservation.html">Reservation</a></li>
+                    <li class="menuNav"><a href="services.html">Services</a></li>
+                    <li class="active menuNav"><a href="contact.html">Contact</a></li>
+               </ul>
+               <ul>
+                    <li id="contact">1 (800) 1-TEMPLE</li>
+               </ul>
+          </nav>
+     </header>
+     <main>
+          <section>
+               <form accept-charset="UTF-8" action="action_page.php" autocomplete="off" method="GET" target="_blank">
+                    <fieldset>
+                         <legend>Contact Us</legend>
+                         <br />
+                         <input type="text" id="fullName" name="fullName" placeholder="Full Name" required>
+                         <br />
+                         <br />
+                         <input type="email" id="email" name="email" placeholder="email@address.com"> <br />
+                         <br />
+                         <textarea name=" otherInfo" id="otherInfo" cols="30" rows="5"
+                              placeholder="Please share something with us"></textarea>
+                         <br />
+                         <br />
+                         <a id="makeLikeAButton" href="thanks.html">Submit</a>
+                    </fieldset>
+               </form>
+          </section>
+          <br />
+          <br />
+          <iframe
+               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.405019701323!2d-77.09772048464716!3d38.98325177955754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800+Montgomery+Ln+%23300%2C+Bethesda%2C+MD+20814!5e0!3m2!1sen!2sus!4v1554852918204!5m2!1sen!2sus"
+               width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+     </main>
+     <footer>
+          <h3>&#169;<span id="theCopyright-year"></span> | <a href="https://obornandrew.github.io">Andrew Oborn</a> |
+               Temple Inn & Suites | <a href="resource-reference.html">Resources</a></h3>
+     </footer>
+     <script src="scripts/hamburger.js"></script>
+     <script src="scripts/copyright-year.js"></script>
+</body>
+</html>
